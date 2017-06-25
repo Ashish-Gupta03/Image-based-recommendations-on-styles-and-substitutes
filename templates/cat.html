@@ -1,0 +1,186 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Visual Recommender</title>
+    <link href="../static/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    
+    <!-- jQuery (necessary JavaScript plugins) -->
+    <script type='text/javascript' src="../static/js/jquery-1.11.1.min.js"></script>
+    
+    <!-- Custom Theme files -->
+    <link href="../static/css/style.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <!--//theme-style-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   
+    <script type="application/x-javascript"> 
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
+        
+        function hideURLbar(){ 
+            window.scrollTo(0,1); 
+        } 
+    </script>
+    
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
+    <!-- start menu -->
+    <link href="../static/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="../static/js/megamenu.js"></script>
+    <script>
+        $(document).ready(function(){$(".megamenu").megamenu();});
+    </script>
+    <script src="../static/js/menu_jquery.js"></script>
+</head>
+<body>
+    
+<!-- header_top -->    
+<div class="top_bg">
+    <div class="container">
+        <div class="header_top">
+            <div class="top_right">
+                <ul>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="top_left">
+                <h2><span></span> Call us : 09088467250</h2>
+            </div>
+                <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<!-- header-->
+
+<div class="header_bg">
+<div class="container">
+	<div class="header">
+	<div class="head-t">
+		<div class="logo">
+            <center><h1>Visual Recommender SystemS</h1></center>
+		</div>
+        
+		<!-- start header_right -->
+		<div class="header_right">
+        <br>
+<!-- 		<div class="search">
+		    <form>
+		    	<input type="text" value="" placeholder="search...">
+				<input type="submit" value="">
+			</form>
+		</div> -->
+		<div class="clearfix"> </div>
+		</div>
+		<!--div class="clearfix"> </div-->
+	</div>
+        
+		<!-- start header menu -->
+		<ul class="megamenu skyblue">
+			<li class="active grid"><a class="color1" href="/">Home</a></li>
+			<li class="grid"><a class="color2" id="tshirts" href="/cat?id=1">T-SHIRT</a></li>
+			<li><a class="color4" id="jeans" href="/cat?id=2">JEANS</a></li>				
+            <li><a class="color5" id="sweat_shirts" href="/cat?id=3">SWEAT-SHIRT</a></li>
+            <li><a class="color6" id="shoes" href="/cat?id=4">SHOES</a></li>
+            <li><a class="color7" id="googles" href="/cat?id=5">GOGGLES</a></li>
+            <li><a class="color8" id="ties" href="/cat?id=6">TIES</a></li>
+            <li><a class="color9" id="watches" href="/cat?id=7">WATCHES</a></li>
+            <li><a class="color10" id="shirts" href="/cat?id=8">SHIRTS</a></li>
+		 </ul> 
+	</div>
+</div>   <!-- ENd of Container -->
+</div>
+<!-- content -->
+	<div class="special container">
+        <style>
+            .pro{
+                width:6em;
+                height: 200px;
+                margin-bottom: 2em;
+            }
+        </style>
+        
+        <h3 id="heading" style="display:none;">{{ name }}</h3>
+        
+		<div class="specia-top" >
+			<ul class="grid_2">
+        <li class="pro">        
+		      <div class="special-info grid_1 simpleCart_shelfItem">
+                <a href="/api?id={{ seq[0] }}&dirid={{ did }}"><img id="0" src="{{ data[0] }}" class="img-responsive" style="width:95%;" alt=""></a>
+		      </div>
+        </li>
+        <li class="pro">        
+		      <div class="special-info grid_1 simpleCart_shelfItem">
+				    <a href="/api?id={{ seq[1] }}&dirid={{ did }}"><img id="1" src="{{ data[1] }}" class="img-responsive" style="width:95%;"  alt=""></a>
+		      </div>
+        </li>
+		<li class="pro">
+            <div class="special-info grid_1 simpleCart_shelfItem">
+				<a href="/api?id={{ seq[2] }}&dirid={{ did }}"><img id="2" src="{{ data[2] }}" class="img-responsive" style="width:95%;" alt=""></a>
+            </div>    
+		</li>
+		<li class="pro">
+            <div class="special-info grid_1 simpleCart_shelfItem">
+				<a href="/api?id={{ seq[3] }}&dirid={{ did }}"><img id="3" src="{{ data[3] }}" class="img-responsive" style="width:95%;" alt=""></a>				
+            </div>    
+		</li>
+        <li class="pro">
+            <div class="special-info grid_1 simpleCart_shelfItem">
+				<a href="/api?id={{ seq[4] }}&dirid={{ did }}"><img id="4" src="{{ data[4] }}" class="img-responsive" style="width:95%;" alt=""></a>				
+            </div>    
+		</li>        
+               
+        <li class="pro">
+            <div class="special-info grid_1 simpleCart_shelfItem">
+				<a href="/api?id={{ seq[5] }}&dirid={{ did }}"><img id="5" src="{{ data[5] }}" class="img-responsive" style="width:95%;" alt=""></a>				
+            </div>    
+		</li>
+         <br><br><br><br><br><br><br><br><br><br>
+        <li class="pro">
+            <div class="special-info grid_1 simpleCart_shelfItem">
+				<a href="/api?id={{ seq[6] }}&dirid={{ did }}"><img id="6" src="{{ data[6] }}" class="img-responsive" style="width:95%;" alt=""></a>				
+            </div>    
+		</li>
+        <li class="pro">
+            <div class="special-info grid_1 simpleCart_shelfItem">
+				<a href="/api?id={{ seq[7] }}&dirid={{ did }}"><img id="7" src="{{ data[7] }}" class="img-responsive" style="width:95%;" alt=""></a>				
+            </div>    
+		</li>
+        <li class="pro">
+            <div class="special-info grid_1 simpleCart_shelfItem">
+				<a href="/api?id={{ seq[8] }}&dirid={{ did }}"><img id="8" src="{{ data[8] }}" class="img-responsive" style="width:95%;" alt=""></a>				
+            </div>    
+		</li>
+        <li class="pro">
+            <div class="special-info grid_1 simpleCart_shelfItem">
+				<a href="/api?id={{ seq[9] }}&dirid={{ did }}"><img id="9" src="{{ data[9] }}" class="img-responsive" style="width:95%;" alt=""></a>				
+            </div>    
+		</li>   
+                <li class="pro">
+            <div class="special-info grid_1 simpleCart_shelfItem">
+                <a href="/api?id={{ seq[10] }}&dirid={{ did }}"><img id="10" src="{{ data[10] }}" class="img-responsive" style="width:95%;" alt=""></a>              
+            </div>    
+        </li>        
+                <li class="pro">
+            <div class="special-info grid_1 simpleCart_shelfItem">
+                <a href="/api?id={{ seq[11] }}&dirid={{ did }}"><img id="11" src="{{ data[11] }}" class="img-responsive" style="width:95%;" alt=""></a>              
+            </div>    
+        </li>             
+	       </ul>
+		</div>
+	</div>
+    
+<div class="footer">
+	<div class="containe text-center">	
+			<p>Copyrights © Visual Recommender System. All rights reserved </p>
+	</div>
+</div>
+    
+</body>
+</html>
+<script>
+$(document).ready(function(){
+    $('#'+$('#heading').html()).css('background-color', '#2e94ab' );
+})
+</script>
