@@ -7,6 +7,8 @@ The system we develop is capable of recommending which clothes and accessories w
 * scikit-learn
 
 Run ```model.py``` for making the code run.
+
 For a demo of how the system runs please watch the video https://www.youtube.com/watch?v=ep-sg-7lMfw
+
 
 For more information refer to the paper http://cseweb.ucsd.edu/~jmcauley/pdfs/sigir15.pdf
